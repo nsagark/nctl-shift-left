@@ -29,6 +29,6 @@ jobs:
         run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s 
 
       - name: NCTL Scan - Kubernetes Detailed Report
-        run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s --details 
+        run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s --details --audit-as-warn
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
