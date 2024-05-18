@@ -28,8 +28,8 @@ jobs:
       # - name: NCTL Scan - Kubernetes
       #   run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s --audit-as-warn
         
-      - name: NCTL Scan - Kubernetes
-        run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s        
+      # - name: NCTL Scan - Kubernetes
+      #   run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s        
 
       - name: NCTL Scan - Kubernetes Detailed Report
         run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s --details
