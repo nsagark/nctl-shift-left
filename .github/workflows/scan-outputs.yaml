@@ -32,7 +32,9 @@ jobs:
       #   run: nctl scan kubernetes --policies controls/pod-security --resources config-files/k8s --details
 
       - name: NCTL Scan Repository
-        run: nctl scan repository --policies controls/pod-security
+        run: |
+          nctl login --url ${NIRMATA_URL} --userid sagar@nirmata.com --token ${NIRMATA_TOKEN}
+          nctl scan repository --policies controls/pod-security
 
 
 
