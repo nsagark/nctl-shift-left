@@ -33,7 +33,7 @@ jobs:
 
       - name: NCTL Scan Repository
         run: |
-          nctl login --url ${NIRMATA_URL} --userid sagar@nirmata.com --token ${NIRMATA_TOKEN}
+          nctl login --userid sagar@nirmata.com
           nctl scan repository --policies controls/pod-security
 
 
