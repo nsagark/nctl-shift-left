@@ -1,4 +1,4 @@
-name: NCTL Scan K8s Demo
+name: NCTL Repo Scan Demo
 run-name: ${{ github.actor }} has triggered Scan Action 🚀
 on:
   pull_request:
