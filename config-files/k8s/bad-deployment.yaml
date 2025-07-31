@@ -15,9 +15,9 @@ spec:
       labels:
         app: nginx
     spec:
-      # hostIPC: true
-      # hostPID: true
-      # hostNetwork: true
+      hostIPC: true
+      hostPID: true
+      hostNetwork: true
       containers:
       - name: nginx
         image: nginx:1.14.2
